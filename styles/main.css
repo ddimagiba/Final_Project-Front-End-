@@ -1,3 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	background-color: rgb(120,120,120);
 	margin: auto;
@@ -13,18 +18,28 @@ body {
 	position: relative;
 }
 
+.clearfix:after {
+	content: ".";
+	display: table;
+	clear: both;
+}
+
 #nav {
-	list-style: none;
-	float: right;
+	/*list-style: none;
+	float: right;*/
+	display: flex;
+	flex-direction: row;
+	justify-content:  end;
 
 }
 #logo{
 	float: right;
 }
 
-#nav li{
-	margin-left: 20px;
-	float: left;
+#nav li:first-of-type {
+	margin-left: auto;
+	margin-right: 1em;
+	list-style: none
 	
 }
 
@@ -43,14 +58,12 @@ body {
 }
 
 #profile {
-	width: 50px;
+	width: 200px;
 	height: 620px;
-
-}
-
-h1 {
 	text-align: center;
 }
+
+
 
 #foot { 
 	background-color: black;
