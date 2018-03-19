@@ -13,8 +13,7 @@ body {
 #header {
 	width: 100%;
 	height: 150px;
-	line-height: 150px;
-	background: #333;
+	background: #000;
 	position: relative;
 }
 
@@ -24,38 +23,26 @@ body {
 	clear: both;
 }
 
-#nav {
-	/*list-style: none;
-	float: right;*/
+.nav ul li {
 	display: flex;
 	flex-direction: row;
-	justify-content:  end;
-
-}
-#logo{
+	justify-content: end;
+	list-style: none;
+	line-height: 150%;
 	float: right;
 }
 
-#nav li:first-of-type {
-	margin-left: auto;
-	margin-right: 1em;
-	list-style: none
-	
+
+img {
+	float: left;
+	width: auto;
+	height: 150px;
 }
 
-#nav li a {
-	color: #FFF;
-	font-weight: bold;
-	padding: 10px;
-	height: 10px;
-	font-size: 20px;
-	border: 10px solid;
-}
 
-#a {
-	font-family: bold;
 
-}
+
+
 
 #profile {
 	width: 200px;
