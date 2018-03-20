@@ -1,20 +1,19 @@
-* {
-	margin: 0;
-	padding: 0;
-}
+
 
 body {
-	background-color: rgb(120,120,120);
-	margin: auto;
+	max-width: 1280px;
 	
 }
+
+
 
 
 #header {
 	width: 100%;
 	height: 150px;
 	background: #000;
-	position: relative;
+	
+
 }
 
 .clearfix:after {
@@ -23,13 +22,24 @@ body {
 	clear: both;
 }
 
-.nav ul li {
-	display: flex;
-	flex-direction: row;
-	justify-content: end;
+.nav  {
+	
+	justify-content: space-around;
 	list-style: none;
 	line-height: 150%;
-	float: right;
+	display: flex;
+	flex-direction: row;
+	padding-top: 120px;
+
+}
+
+.picture {
+
+	background: url(../images/djpic3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+	
 }
 
 
@@ -43,10 +53,10 @@ img {
 
 
 
-
 #profile {
-	width: 200px;
+	
 	height: 620px;
+	
 	text-align: center;
 }
 
