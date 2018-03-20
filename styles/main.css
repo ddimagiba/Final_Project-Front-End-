@@ -30,6 +30,8 @@ body {
 	display: flex;
 	flex-direction: row;
 	padding-top: 120px;
+	width: 18em;
+    margin-left: auto;
 
 }
 
@@ -56,7 +58,6 @@ img {
 #profile {
 	
 	height: 620px;
-	
 	text-align: center;
 }
 
