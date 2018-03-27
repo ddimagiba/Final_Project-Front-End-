@@ -1,15 +1,26 @@
 body {
-	min-height: 100vh;
+	height: 100vh;
 	position: relative;
 	margin: 0; 
+	overflow: hidden;
 }
 
-#aboutpage {
+#aboutbody {
 	background-color: #A39EA1;
+	
+
 }
+
+.containerpicture img{
+	float:right;
+	height: 400%;
+
+}
+
+
 
 #page {
-	width: 900px
+	width: 450px
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -54,9 +65,14 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
+    background-position: center;
 	
 }
 
+#containerpicture {
+	position: right;
+	height: auto;
+}
 
 img {
 	float: left;
@@ -65,12 +81,9 @@ img {
 }
 
 
-
-
-
 #profile {
 	
-	height: 600px;
+	height: 430px;
 	text-align: center;
 }
 
@@ -80,10 +93,11 @@ img {
 	background-color: black;
 	width: auto;
  	margin: auto;
-	height: 150px;
+	height: 80vh;
 	text-align: center;
 	color: red;
 	position: relative;
+
 }
 
 
