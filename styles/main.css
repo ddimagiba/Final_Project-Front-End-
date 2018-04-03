@@ -6,44 +6,64 @@ body {
 	overflow: hidden;
 }
 
+li {
+	cursor: pointer;
+	list-style: none;
+}
+
+#sickroc img{
+	height: 150px;
+	float: left;
+	width: auto;
+}
+
+
+	
+
 #aboutbody {
 	background-color: #A39EA1;
 
 }
 
-.aboutnav{
+#aboutbio {
+	background-color: lightgrey;
+	width: 300px;
+	border: 10px solid black;
+	padding: 10px;
+	margin: 10px;
+
+}
+
+.aboutnav {
 	justify-content: space-around;
 	list-style: none;
 	line-height: normal;
 	display: flex;
 	flex-direction: row;
-	padding-top: 130px;
+	padding-top: 92px;
 	padding-bottom: 10px;
+	padding-left: 200px;
 	margin: auto;
 
 }
 
-.containerpicture img{
+.containerpicture img {
 	float:right;
 	height: 400%;
+	border: 5px solid;
 
 }
 
 .aboutheader {
 	position: top;
 	width: 100%;
-	height: 150px;
+	height: 110px;
 	background: #000;
 
 
 }
 
 
-#page {
-	width: 450px
-	margin-left: auto;
-	margin-right: auto;
-}
 
 
 
@@ -62,48 +82,94 @@ body {
 }
 
 .nav  {
-	
+
 	justify-content: space-around;
 	list-style: none;
 	line-height: normal;
 	display: flex;
 	flex-direction: row;
 	padding-top: 130px;
-	padding: 8em;
+	padding: 122px;
 	margin: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+.nav a:hover {
+	background: red;
+	text-decoration: none;
 
 }
 
-li {
-	cursor: pointer;
-	
+.nav a:active {
+	background: pink;
+	text-decoration: none;
+
 }
+
+.nav  li {
+	color: rgb(255, 255, 255); 
+    font-size: 20px; 
+    line-height: 13px;
+    padding: 6px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none;
+   
+
+}
+
+
+
+#gallery-container  {
+	width: 650px;
+	height: 400px;
+	overflow: hidden;
+	margin: 30px auto
+	z-index: ;;
+}
+
+#gallery-container .djslides {
+	display: block;
+	width: 6000px;
+	height: 400px;
+	margin:0;
+	padding: 0;
+}
+
+#gallery-container .mydjpics{
+	float: left;
+	list-style-type: none;
+	width: 600px;
+	height: 400px;
+	padding: auto;
+}
+
+
 
 .picture {
-
 	background: url(../images/djpic3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: auto;
     background-position: center;
-	
+    background-size: 100%	
 }
 
-#containerpicture {
+.containerpicture {
 	position: right;
 	height: auto;
 }
 
-img {
-	float: left;
-	width: auto;
-	height: 150px;
-}
+
 
 
 #profile {
-	
-	height: 430px;
+	background-repeat: no-repeat;
+	height: 480px;
 	text-align: center;
 }
 
@@ -113,11 +179,20 @@ img {
 	background-color: black;
 	width: auto;
  	margin: auto;
-	height: 80vh;
+	height: 150%;
 	text-align: center;
 	color: red;
 	position: relative;
 
+}
+
+@media (min-width: 500px) {
+	p {
+		font-size: 1.5rem;
+	}
+
+
+	
 }
 
 
