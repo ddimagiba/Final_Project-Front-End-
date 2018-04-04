@@ -17,6 +17,7 @@ images[8] = './images/djpic7.jpg';
 images[9] = './images/djpic8.jpg';
 images[10] = './images/djpic9.jpg';
 
+
 function changeImg(){
 	document.mydjpics.src = images[i]
 
