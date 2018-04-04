@@ -3,13 +3,21 @@ body {
 	width: 100%;
 	position: relative;
 	margin: 0; 
-	overflow: hidden;
+	overflow: scroll;
+	background-color: black;
 }
 
 li {
 	cursor: pointer;
 	list-style: none;
 }
+
+img {
+	
+	height: auto;
+}
+
+
 
 #sickroc img{
 	height: 150px;
@@ -18,10 +26,9 @@ li {
 }
 
 
-	
-
 #aboutbody {
 	background-color: #A39EA1;
+	min-width: 300px;
 
 }
 
@@ -34,17 +41,27 @@ li {
 
 }
 
-.aboutnav {
-	justify-content: space-around;
-	list-style: none;
-	line-height: normal;
-	display: flex;
-	flex-direction: row;
-	padding-top: 92px;
-	padding-bottom: 10px;
-	padding-left: 200px;
-	margin: auto;
 
+
+#aboutbio p {
+	font-size: 15px;
+	border: 2px solid lightgrey;
+	padding: 10px;
+	margin: 30px;
+}
+
+.aboutnav {
+	display: flex;
+	justify-content: flex-end;
+	padding: 1em .5em;
+	font-size: 25px;
+	font-family: serif;
+
+}
+
+.aboutnav li {
+	margin-right: 3vmax;
+	list-style: none;
 }
 
 .containerpicture img {
@@ -55,16 +72,10 @@ li {
 }
 
 .aboutheader {
-	position: top;
 	width: 100%;
-	height: 110px;
+	/*height: 110px;*/
 	background: #000;
-
-
 }
-
-
-
 
 
 #header {
@@ -91,10 +102,12 @@ li {
 	padding-top: 130px;
 	padding: 122px;
 	margin: auto;
+	
 }
 
 a {
 	text-decoration: none;
+
 }
 
 .nav a:hover {
@@ -109,6 +122,12 @@ a {
 
 }
 
+
+.nav ul {
+
+	font-size: 25px;
+	font-family: serif;
+}
 .nav  li {
 	color: rgb(255, 255, 255); 
     font-size: 20px; 
@@ -121,18 +140,15 @@ a {
     font-style: normal; 
     font-variant: normal; 
     text-transform: none;
-   
-
+    font-size: 25px;
+	font-family: serif;
 }
 
-
-
-#gallery-container  {
+/*#gallery-container  {
 	width: 650px;
 	height: 400px;
 	overflow: hidden;
-	margin: 30px auto
-	z-index: ;;
+	margin: 30px auto;
 }
 
 #gallery-container .djslides {
@@ -141,17 +157,19 @@ a {
 	height: 400px;
 	margin:0;
 	padding: 0;
+}*/
+
+.maingallery {
+	background-color: lightgrey;
 }
 
 #gallery-container .mydjpics{
-	float: left;
+	/*float: left;*/
 	list-style-type: none;
 	width: 600px;
 	height: 400px;
 	padding: auto;
 }
-
-
 
 .picture {
 	background: url(../images/djpic3.jpg);
@@ -164,9 +182,6 @@ a {
 	height: auto;
 }
 
-
-
-
 #profile {
 	background-repeat: no-repeat;
 	height: 480px;
@@ -175,24 +190,32 @@ a {
 
 
 
-#foot { 
+footer { 
 	background-color: black;
-	width: auto;
- 	margin: auto;
-	height: 150%;
-	text-align: center;
+	height: 150px;
 	color: red;
-	position: relative;
-
 }
+
+footer .social{
+	left: 43%;
+    width: 200px;
+    top: 25%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+footer img  {
+
+	height: 100px;
+}
+
+
+
 
 @media (min-width: 500px) {
 	p {
 		font-size: 1.5rem;
-	}
-
-
-	
+	}	
 }
 
 
